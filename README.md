@@ -1,0 +1,1 @@
+A script using Google API to generate flashcards from notes.
