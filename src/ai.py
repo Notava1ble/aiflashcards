@@ -1,3 +1,5 @@
+import logging
+import sys
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types
@@ -43,4 +45,9 @@ def generate(INSTRUCTIONS: str, PROMPT: str) -> str:
         config=generate_content_config,
     )
 
-    return response.text if response.text else ""
+    if response.text:
+        logging.info("Response from AI generated successfully.")
+        return response.text
+    else:
+        logging.fatal("No response received from AI. Exiting.")
+        sys.exit(1)

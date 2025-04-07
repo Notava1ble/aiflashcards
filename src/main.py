@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 import csv
 
 from ai import generate
+from logging_config import configure_logger
 from utils import (
     clean_previous_output,
     format_csv_to_text,
@@ -15,6 +16,7 @@ from utils import (
 
 
 def main():
+    configure_logger()
     INSTRUCTIONS = load_instructions()
     NOTES = load_notes()
     COMBINED_NOTES = "\n\n---\n[End of Note]\n---\n\n".join(NOTES)

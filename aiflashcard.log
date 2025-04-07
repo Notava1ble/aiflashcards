@@ -1,0 +1,72 @@
+2025-04-07 19:28:47,087 - INFO - Loaded instructions from ./src/instructions.txt
+2025-04-07 19:28:47,089 - DEBUG - Loaded note from ./notes/how the internet works.md
+2025-04-07 19:28:47,089 - INFO - Finished loaded 1 notes from ./notes/
+2025-04-07 19:28:47,092 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-07 19:28:47,095 - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-04-07 19:29:22,407 - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-2.5-pro-exp-03-25:generateContent HTTP/11" 200 None
+2025-04-07 19:29:22,418 - INFO - AFC remote call 1 is done.
+2025-04-07 19:29:22,419 - INFO - Response from AI generated successfully.
+2025-04-07 19:29:22,419 - DEBUG - No csv fencing found. The first and last lines are question,answer ... "What does IXP stand for?","Internet Exchange Point."
+2025-04-07 19:29:22,420 - INFO - Logged csv response to ./logs\response.csv
+2025-04-07 19:29:22,420 - DEBUG - Formatted row: What is the Internet?	A vast, interconnected network of networks that allows global communication and information sharing.
+2025-04-07 19:29:22,420 - DEBUG - Formatted row: What is the standard protocol suite the Internet relies on?	TCP/IP (Transmission Control Protocol/Internet Protocol).
+2025-04-07 19:29:22,421 - DEBUG - Formatted row: What does TCP/IP govern?	How data is transmitted, addressed, routed, and received across various network devices.
+2025-04-07 19:29:22,421 - DEBUG - Formatted row: Why is understanding the Internet essential for computer science students?	It underpins nearly all modern computing systems, like cloud platforms and mobile applications.
+2025-04-07 19:29:22,421 - DEBUG - Formatted row: How does the Internet function at its core regarding data?	By breaking data into small units called packets.
+2025-04-07 19:29:22,421 - DEBUG - Formatted row: What are packets?	Small units of data used for transmission over the Internet, containing payload and headers.
+2025-04-07 19:29:22,421 - DEBUG - Formatted row: What two main components does an Internet packet contain?	Payload (the actual data) and headers (control information like source/destination IP addresses).
+2025-04-07 19:29:22,421 - DEBUG - Formatted row: How are packets sent across the Internet?	They are routed independently through the network and reassembled at their destination.
+2025-04-07 19:29:22,421 - DEBUG - Formatted row: What is the role of the Internet Protocol (IP)?	It handles addressing and routing, ensuring packets reach the correct endpoint.
+2025-04-07 19:29:22,421 - DEBUG - Formatted row: Which protocol handles addressing and routing of packets?	Internet Protocol (IP).
+2025-04-07 19:29:22,421 - DEBUG - Formatted row: What is the role of the Transmission Control Protocol (TCP)?	It ensures reliable data transmission, establishes connections, manages data flow, and performs error checking.
+2025-04-07 19:29:22,421 - DEBUG - Formatted row: Which protocol ensures reliable data transmission over the Internet?	Transmission Control Protocol (TCP).
+2025-04-07 19:29:22,421 - DEBUG - Formatted row: Where does TCP sit relative to IP in the protocol stack?	TCP sits above IP.
+2025-04-07 19:29:22,421 - DEBUG - Formatted row: How does TCP initiate a session?	Using a three-way handshake (SYN, SYN-ACK, ACK).
+2025-04-07 19:29:22,421 - DEBUG - Formatted row: What is the sequence of messages in a TCP three-way handshake?	SYN, SYN-ACK, ACK.
+2025-04-07 19:29:22,421 - DEBUG - Formatted row: How does TCP ensure successful data delivery?	By requiring acknowledgments (ACKs) for received packets.
+2025-04-07 19:29:22,421 - DEBUG - Formatted row: What does TCP do if packets are lost or arrive out of order?	It handles retransmission and reordering.
+2025-04-07 19:29:22,421 - DEBUG - Formatted row: What are routers?	Specialized devices that direct packets across networks.
+2025-04-07 19:29:22,421 - DEBUG - Formatted row: How do routers determine the path for packets?	They maintain routing tables and use the destination IP address to determine the best path.
+2025-04-07 19:29:22,421 - DEBUG - Formatted row: How do packets travel between routers?	They hop from router to router until reaching the target device.
+2025-04-07 19:29:22,421 - DEBUG - Formatted row: What are examples of routing protocols used by routers?	OSPF (Open Shortest Path First) and BGP (Border Gateway Protocol).
+2025-04-07 19:29:22,421 - DEBUG - Formatted row: What is the purpose of routing protocols like OSPF and BGP?	They help routers dynamically adjust routes in response to network changes.
+2025-04-07 19:29:22,421 - DEBUG - Formatted row: What is an IP address?	A unique identifier assigned to every device on the Internet.
+2025-04-07 19:29:22,421 - DEBUG - Formatted row: What type of address does IPv4 use?	32-bit addresses.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What type of address does IPv6 use?	128-bit addresses.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: Why is IPv6 replacing IPv4?	To provide a much larger address space due to the growth of connected devices.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What technology allows multiple devices on a local network to share a single public IP address?	NAT (Network Address Translation).
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What is NAT (Network Address Translation)?	A method that maps internal private IP addresses to public IP addresses, often used to conserve public IPv4 addresses.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What are domain names used for?	To provide human-readable addresses (like www.example.com) instead of numeric IP addresses.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What is the Domain Name System (DNS)?	The system that translates domain names into IP addresses.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What system translates human-readable domain names into IP addresses?	The Domain Name System (DNS).
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What happens when you type a URL into a browser regarding DNS?	The computer queries a DNS server to resolve the domain name and retrieve the corresponding IP address.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What physical infrastructure does Internet data travel over?	Infrastructure such as fiber optic cables, copper wires, and wireless links.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: Who maintains the physical infrastructure of the Internet?	ISPs (Internet Service Providers).
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What are ISPs?	Internet Service Providers, companies that maintain Internet infrastructure and provide access.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: How do ISPs interconnect to route traffic globally?	Through Internet Exchange Points (IXPs).
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What are IXPs?	Internet Exchange Points, physical locations where ISPs interconnect to exchange traffic efficiently.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What devices serve web content on the Internet?	Web servers.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What applications do users typically use to interact with web content?	Client applications like web browsers.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What protocol is commonly used to request and transfer web content?	HTTP (Hypertext Transfer Protocol) or its secure variant HTTPS.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What is the difference between HTTP and HTTPS?	HTTPS (Hypertext Transfer Protocol Secure) is the secure version of HTTP, using encryption like TLS.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What protocol provides encryption for secure data transmission on the web?	TLS (Transport Layer Security), often used with HTTPS.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What is the purpose of TLS (Transport Layer Security)?	To encrypt data during transmission, ensuring confidentiality and integrity.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What are some mechanisms used to protect networks and data from unauthorized access and attacks?	Firewalls, intrusion detection systems, and access control mechanisms.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: How can the Internet's operation be summarized?	It operates through a layered architecture involving protocols (IP, TCP, DNS, HTTP) and infrastructure (routers, servers, cables).
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What is the overall goal of the Internet's architecture and protocols?	To enable reliable, efficient, and secure communication across a decentralized global network.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What foundational knowledge does understanding the Internet provide for further studies?	It forms a pillar for studies in networking, distributed systems, and cybersecurity.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What is the payload in an Internet packet?	The actual data being sent.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What is contained in the headers of an Internet packet?	Control information, including source and destination IP addresses.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What does the 'IP' in TCP/IP stand for?	Internet Protocol.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What does the 'TCP' in TCP/IP stand for?	Transmission Control Protocol.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What does OSPF stand for?	Open Shortest Path First.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What does BGP stand for?	Border Gateway Protocol.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What does DNS stand for?	Domain Name System.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What does NAT stand for?	Network Address Translation.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What does HTTP stand for?	Hypertext Transfer Protocol.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What does HTTPS stand for?	Hypertext Transfer Protocol Secure.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What does TLS stand for?	Transport Layer Security.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What does ISP stand for?	Internet Service Provider.
+2025-04-07 19:29:22,422 - DEBUG - Formatted row: What does IXP stand for?	Internet Exchange Point.
+2025-04-07 19:29:22,423 - INFO - Created 60 flashcards
+2025-04-07 19:29:22,423 - INFO - Written flashcards to ./output/flashcards.txt
