@@ -59,7 +59,7 @@ def load_notes(path: str = "./notes/") -> List[str]:
             NOTES.append(NOTE)
             logging.debug(f"Loaded note from {file_path}")
 
-    logging.info(f"Finished loaded {len(NOTES)} notes from {path}")
+    logging.info(f"Finished loading {len(NOTES)} notes from {path}")
     return NOTES
 
 

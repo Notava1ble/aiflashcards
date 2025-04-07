@@ -39,6 +39,8 @@ def generate(INSTRUCTIONS: str, PROMPT: str) -> str:
         ],
     )
 
+    logging.info("Generating content using AI model...")
+
     response = client.models.generate_content(
         model=model,
         contents=contents,
