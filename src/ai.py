@@ -7,7 +7,7 @@ import os
 
 # Access the variable
 load_dotenv(dotenv_path="./.env")
-API_KEY = os.getenv("GEMINI_2.5_API_KEY")
+API_KEY = os.getenv("GEMINI_API_KEY")
 
 
 def generate(INSTRUCTIONS: str, PROMPT: str) -> str:
