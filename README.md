@@ -5,7 +5,7 @@ AI Flashcards is a Python CLI tool that converts study notes into Anki-compatibl
 ## Features
 
 - Generates structured question/answer flashcards from local note files.
-- Uses Gemini 3 Flash by default (`gemini-3-flash`).
+- Uses Gemini 3 Flash Preview by default (`gemini-3-flash-preview`).
 - Outputs Anki-ready tab-separated text and keeps raw model CSV for traceability.
 - Supports configurable model and runtime settings via environment variables and CLI flags.
 
@@ -42,7 +42,7 @@ You can pass configuration at runtime (recommended for CI/CD and one-off runs):
 
 ```bash
 python src/main.py \
-  --model gemini-3-flash \
+  --model gemini-3-flash-preview \
   --temperature 0.2 \
   --max-output-tokens 8192 \
   --notes-dir ./notes \
@@ -54,7 +54,7 @@ python src/main.py \
 
 ### CLI Options
 
-- `--model` (default from `GEMINI_MODEL` or `gemini-3-flash`)
+- `--model` (default from `GEMINI_MODEL` or `gemini-3-flash-preview`)
 - `--temperature` (default from `GEMINI_TEMPERATURE` or `0.2`)
 - `--max-output-tokens` (default from `GEMINI_MAX_OUTPUT_TOKENS` or `8192`)
 - `--notes-dir` (default from `NOTES_DIR` or `./notes/`)
